@@ -12,7 +12,7 @@ main{
 #ingredients {
     padding: 10px;
     border: 1px solid #020705;
-    border-radius: 6px;
+    border-radius: 4px;
     width: 400px;
     margin-right: 5px;
     font-size: 16px;
@@ -21,7 +21,7 @@ main{
 button {
     padding: 10px;
     border: 1px solid #020705;
-    border-radius: 6px;
+    border-radius: 4px;
     width: 150px;
     margin-right: 5px;
     font-size: 16px;
@@ -63,10 +63,10 @@ a{
 #recipe-output {
     margin-top: 20px;
     padding: 20px;
-    border-left: 3px solid #020705;
+    border-left: 4px solid #020705;
     line-height: 1.6;
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 6px;
+    border-radius: 4px;
     color: white;
     
     
