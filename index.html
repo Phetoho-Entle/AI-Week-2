@@ -7,13 +7,24 @@
     <link rel="stylesheet" href="style.css"></linkrel>
 </head>
 <body>
-    <h1>
-        
-        Welcome to the AI Recipe Generator!
-    </h1>
+    <header>
+        <h1>
+        AI Recipe Generator
+        </h1>
+    </header>
+    
+    <main>
+        <form id="recipe-form">
+            <input type="text" id="ingredients" name="ingredients" placeholder="Enter ingredients..." required>
+            <button type="submit">Generate Recipe</button>
+        </form>
+        <div id="recipe-output"></div>
+    </main>
+    
+    <footer>
+    This project was coded by <a href="https://github.com/Phetoho-Entle">Phetoho Mohohla</a> and is open source on <a href="https://github.com/Phetoho-Entle/AI-Week-2" target="_blank">GitHub</a> and hosted on <a href="https://ai-generator-recipee.netlify.app/" target="_blank">Netlify</a>.
+    </footer>
 </body>
-<footer>
-    This project was coded by Phetoho Mohohla and is open source on <a href="https://github.com/Phetoho-Entle/AI-Week-2" target="_blank">GitHub</a> and hosted on <a href="https://ai-generator-recipee.netlify.app/" target="_blank">Netlify</a>.
-</footer>
+
 <script src ="script.js"></script>
 </html>
