@@ -63,6 +63,7 @@ a{
 }
 
 #recipe-output {
+    display: none;
     margin-top: 20px;
     padding: 20px;
     border-left: 4px solid #020705;

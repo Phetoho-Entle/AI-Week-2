@@ -1,5 +1,10 @@
 function displayRecipe(response){
-  const lines = response.data.answer
+  
+     const recipeOutput = document.querySelector("#recipe-output");
+  recipeOutput.innerHTML = "⌛ Generating your recipe...";
+  
+  
+    const lines = response.data.answer
     .split("\n")
     .filter((line) => line.trim() !== "")
     .map((line) => `<li>${line}</li>`)
@@ -21,6 +26,10 @@ function displayRecipe(response){
   function generateRecipe(event){
     event.preventDefault();
     
+ let recipeOutput = document.querySelector("#recipe-output");
+  recipeOutput.style.display = "block";       
+  recipeOutput.textContent = "⏳ Generating your recipe...";
+
     let ingredientsInput = document.querySelector("#ingredients");
 
     let prompt = `Generate a detailed recipe with step-by-step instructions based on the following ingredients:${ingredientsInput.value}`;
