@@ -3,7 +3,6 @@ function displayRecipe(response){
      const recipeOutput = document.querySelector("#recipe-output");
   recipeOutput.innerHTML = "⌛ Generating your recipe...";
   
-  
     const lines = response.data.answer
     .split("\n")
     .filter((line) => line.trim() !== "")
@@ -11,8 +10,6 @@ function displayRecipe(response){
     .join("");
 
   const formatted = `<ul>${lines}</ul>`;
-
-
 
     new Typewriter('#recipe-output', {
   strings: formatted,
@@ -39,8 +36,8 @@ function displayRecipe(response){
     
 
     axios.get(apiUrl).then(displayRecipe);
-
-              
+         
 }
+
 let recipeFormElement = document.querySelector("#search-engine");
 recipeFormElement.addEventListener("submit", generateRecipe);
